@@ -52,7 +52,7 @@
         서림
       </p>
     </div>
-    <button class="btn-gold btn-call">연락하기</button>
+    <button class="btn-gold btn-call btn-modal" data-target="call">연락하기</button>
 
     <p class="text-wedding">By Wedding Day</p>
     <h2 class="text-dday">D-15</h2>
@@ -132,56 +132,159 @@
         모든 분들을 귀하게 모실 수 있도록<br>
         참석 의사를 전달 부탁드립니다.
       </p>
-      <button class="btn-gold btn-send">참석 의사 전달하기</button>
+      <button class="btn-gold btn-send btn-modal" data-target="send">참석 의사 전달하기</button>
     </div>
 
     <img src="./assets/images/icon-heart.svg" alt="하트 아이콘" class="icon-heart">
     <p class="text-gold-kr">마음 전하실 곳</p>
 
-    <div class="box-toggle">
-      <button class="btn-toggle">
-        신랑측 계좌번호
-        <img src="./assets/images/arrow-down.svg" alt="" class="icon-arrow-down">
-      </button>
-      <div class="toggle-content">
-        <p class="name gray">신랑</p>
-        <p class="account gray">
-          국민<br>
-          200123-45-678900
-        </p>
-        <button class="btn-copy">복사하기</button>
+    <div class="wrap-toggle">
+      <div class="box-toggle">
+        <button class="btn-toggle">
+          신랑측 계좌번호
+          <img src="./assets/images/arrow-down.svg" alt="" class="icon-arrow-down">
+        </button>
+        <div class="toggle-content">
+          <p class="name gray">신랑</p>
+          <p class="account gray">
+            국민<br>
+            200123-45-678900
+          </p>
+          <button class="btn-copy">복사하기</button>
+        </div>
+        <div class="toggle-content">
+          <p class="name gray">제갈신랑</p>
+          <p class="account gray">
+            국민<br>
+            200123-45-678900
+          </p>
+          <button class="btn-copy">복사하기</button>
+        </div>
       </div>
-      <div class="toggle-content">
-        <p class="name gray">제갈신랑</p>
-        <p class="account gray">
-          국민<br>
-          200123-45-678900
-        </p>
-        <button class="btn-copy">복사하기</button>
+
+      <div class="box-toggle">
+        <button class="btn-toggle">
+          신부측 계좌번호
+          <img src="./assets/images/arrow-down.svg" alt="" class="icon-arrow-down">
+        </button>
+        <div class="toggle-content">
+          <p class="name gray">이하나</p>
+          <p class="account gray">
+            국민<br>
+            200123-45-678900
+          </p>
+          <button class="btn-copy">복사하기</button>
+        </div>
+        <div class="toggle-content">
+          <p class="name gray">이승태</p>
+          <p class="account gray">
+            국민<br>
+            200123-45-678900
+          </p>
+          <button class="btn-copy">복사하기</button>
+        </div>
       </div>
     </div>
 
-    <div class="box-toggle">
-      <button class="btn-toggle">
-        신부측 계좌번호
-        <img src="./assets/images/arrow-down.svg" alt="" class="icon-arrow-down">
-      </button>
-      <div class="toggle-content">
-        <p class="name gray">이하나</p>
-        <p class="account gray">
-          국민<br>
-          200123-45-678900
-        </p>
-        <button class="btn-copy">복사하기</button>
+    <div class="divider"></div>
+
+    <div class="box-flower">
+      <p class="info-flower">화환 안내</p>
+      <p class="text-flower">예식장 사정으로 화환은 마음만 받겠습니다.</p>
+      <button class="btn-white btn-flower">예식장으로 화환 보내기</button>
+    </div>
+
+    <footer>
+      <a href="" class="link-share">
+        <img src="./assets/images/icon-kakao.svg" alt="카카오톡 아이콘">
+        카카오톡으로 공유하기
+      </a>
+      <a href="" class="link-share">
+        <img src="./assets/images/icon-link.svg" alt="공유 아이콘">
+        링크주소 복사하기
+      </a>
+    </footer>
+
+    <div class="wrap-modal">
+      <!-- 랜딩모달 -->
+      <div class="modal modal-send modal-landing" data-name="send-landing">
+        <div class="modal-body">
+          <p class="title-send">참석 의사 전달</p>
+          <p class="text-send">
+            축하의 마음으로 참석해주시는<br>
+            모든 분들을 귀하게 모실 수 있도록<br>
+            참석 의사를 전달 부탁드립니다.
+          </p>
+          <div class="divider"></div>
+          <p class="name">신랑 최도현 & 신부 이하나</p>
+          <p class="location">2023년 10월 28일 토요일 오후 1시 30분</p>
+          <p class="location">아펠가모 광화문 B2 로스타뇨홀</p>
+          <button class="btn-gold btn-modal" data-target="send">참석 의사 전달하기</button>
+
+          <button class="btn-close-modal">
+            <img src="./assets/images/icon-close.svg" alt="닫기 버튼">
+          </button>
+        </div>
+        <button class="btn-close-day">
+          <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5 22.75C19.3325 22.75 23.25 18.8325 23.25 14C23.25 9.16751 19.3325 5.25 14.5 5.25C9.66751 5.25 5.75 9.16751 5.75 14C5.75 18.8325 9.66751 22.75 14.5 22.75ZM14.5 24.5C20.299 24.5 25 19.799 25 14C25 8.20101 20.299 3.5 14.5 3.5C8.70101 3.5 4 8.20101 4 14C4 19.799 8.70101 24.5 14.5 24.5Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.7268 9.82783C20.0981 10.1372 20.1482 10.6889 19.8389 11.0602L14.0055 18.0602C13.8406 18.258 13.597 18.3732 13.3394 18.375C13.0819 18.3768 12.8366 18.265 12.669 18.0695L9.16898 13.9861C8.85448 13.6192 8.89698 13.0668 9.26389 12.7523C9.6308 12.4378 10.1832 12.4803 10.4977 12.8472L13.3239 16.1445L18.4945 9.93986C18.8038 9.56862 19.3556 9.51846 19.7268 9.82783Z" fill="white"/>
+          </svg>
+          오늘 하루 보지 않기
+        </button>
       </div>
-      <div class="toggle-content">
-        <p class="name gray">이승태</p>
-        <p class="account gray">
-          국민<br>
-          200123-45-678900
-        </p>
-        <button class="btn-copy">복사하기</button>
-      </div>
+      <!-- 랜딩모달 끝-->
+
+      <!-- 참석 의사 모달 -->
+      <div class="modal modal-send" data-name="send">
+        <div class="modal-body">
+          <p class="title-send">참석 의사 전달</p>
+          <ul class="list-input">
+            <li class="list-item">
+              <p class="type">구분</p>
+              <div class="wrap-input side">
+                <input type="radio" name="side" id="groom" value="yes" checked>
+                <label for="groom">신랑</label>
+                <input type="radio" name="side" id="bride" value="no">
+                <label for="bride">신부</label>
+              </div>
+            </li>
+            <li class="list-item">
+              <p class="type">성함</p>
+              <div class="wrap-input side">
+                <input type="text" class="input-text">
+              </div>
+            </li>
+            <li class="list-item">
+              <p class="type">참석인원</p>
+              <div class="wrap-input side">
+                <input type="text" class="input-text" placeholder="본인 포함 총 참석인원">
+              </div>
+            </li>
+            <li class="list-item">
+              <p class="type">연락처</p>
+              <div class="wrap-input side">
+                <input type="text" class="input-text" placeholder="- 없이 숫자만">
+              </div>
+            </li>
+            <li class="list-item">
+              <p class="type">식사여부</p>
+              <div class="wrap-input side">
+                <input type="radio" name="eat" id="eat-yes" value="yes" checked>
+                <label for="eat-yes">예정</label>
+                <input type="radio" name="eat" id="eat-no" value="no">
+                <label for="eat-no">안함</label>
+                <input type="radio" name="eat" id="eat-undecided" value="no">
+                <label for="eat-undecided">미정</label>
+              </div>
+            </li>
+          </ul>
+          <button class="btn-gold btn-modal">참석 의사 전달하기</button>
+          <button class="btn-close-modal">
+            <img src="./assets/images/icon-close.svg" alt="닫기 버튼">
+          </button>
+        </div>
+      <!-- 참석 의사 모달 -->
     </div>
   </div>
 
@@ -191,7 +294,7 @@
     const btnMore = document.querySelector('.btn-more');
     // 박스 갤러리의 높이를 반으로 줄인다
     boxGallery.style.maxHeight = boxGalleryHeight / 2 + 'px';
-    btnMore.addEventListener('click', function() {
+    btnMore.addEventListener('click', function () {
       boxGallery.style.maxHeight = boxGalleryHeight + 'px';
       btnMore.style.display = 'none';
     })
@@ -199,12 +302,55 @@
     const btnToggle = document.querySelectorAll('.btn-toggle');
     const toggleBox = document.querySelectorAll('.box-toggle');
 
-    btnToggle.forEach((e, i)=> {
-      e.addEventListener('click', function() {
+    btnToggle.forEach((e, i) => {
+      e.addEventListener('click', function () {
         toggleBox[i].classList.toggle('active');
       })
     })
 
+
+    //모달
+    const wrapModal = document.querySelector('.wrap-modal');
+    const modal = document.querySelectorAll('.modal');
+    const btnModal = document.querySelectorAll('.btn-modal');
+    const btnCloseModal = document.querySelectorAll('.btn-close-modal');
+    const btnCloseDay = document.querySelector('.btn-close-day');
+
+    //만약 closeDay가 false면 wrapModal과 send-landing을 보여준다
+
+    if (localStorage.getItem('closeDay') !== true) {
+      wrapModal.classList.add('active');
+      const modalLanding = document.querySelector('.modal-landing');
+      modalLanding.classList.add('active');
+    }
+
+    btnModal.forEach((e) => {
+      e.addEventListener('click', function () {
+        for (let i = 0; i < modal.length; i++) {
+          modal[i].classList.remove('active');
+        }
+        wrapModal.classList.add('active');
+        modal.forEach((modal) => {
+          if (e.dataset.target === modal.dataset.name) {
+            modal.classList.add('active');
+          }
+        })
+      })
+    })
+
+    btnCloseModal.forEach((e) => {
+      e.addEventListener('click', function () {
+        wrapModal.classList.remove('active');
+        modal.forEach((modal) => {
+          modal.classList.remove('active');
+        })
+      })
+    })
+
+    //btn-close-day 누르면 24시간 동안 안보이게 하기
+    btnCloseDay.addEventListener('click', function () {
+      localStorage.setItem('closeDay', true);
+    })
   </script>
 </body>
 
