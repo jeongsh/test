@@ -707,6 +707,60 @@ footer .link-share {
   margin: 20px auto;
   width: 100%;
 }
+.wrap-modal .modal-swiper {
+  width: 100%;
+  max-width: 450px;
+  background: none;
+  height: auto;
+}
+.wrap-modal .modal-swiper .swiper-wrapper {
+  align-items: center;
+}
+.wrap-modal .modal-swiper .swiper-slide {
+  max-height: 80vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.wrap-modal .modal-swiper .swiper-slide img {
+  width: 100%;
+  pointer-events: auto;
+}
+.wrap-modal .modal-swiper .box-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 24px;
+  gap: 8px;
+}
+.wrap-modal .modal-swiper .box-btn button {
+  width: 32px;
+  height: 32px;
+  background: #000;
+  border-radius: 64px;
+  cursor: pointer;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.wrap-modal .modal-swiper .box-btn button span {
+  font-size: 14px;
+}
+.wrap-modal .modal-swiper .box-btn .btn-prev {
+  transform: rotate(180deg);
+  padding-left: 2px;
+}
+.wrap-modal .modal-swiper .box-btn .btn-next {
+  padding-left: 2px;
+}
+.wrap-modal .modal-swiper .box-btn .btn-close-modal {
+  position: unset;
+}
 
 .fade-in {
   opacity: 0;

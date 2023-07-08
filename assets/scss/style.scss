@@ -697,6 +697,61 @@ footer {
       }
     }
   }
+
+  .modal-swiper{
+    width: 100%;
+    max-width: 450px;
+    background: none;
+    height: auto;
+    .swiper-wrapper{
+      align-items: center;
+    }
+    .swiper-slide{
+      max-height: 80vh;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none;
+      img{
+        width: 100%;
+        pointer-events: auto;
+      }
+    }
+    .box-btn{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-top: 24px;
+      gap: 8px;
+      button{
+        width: 32px;
+        height: 32px;
+        background: #000;
+        border-radius: 64px;
+        cursor: pointer;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        span{
+          font-size: 14px;
+        }
+      }
+      .btn-prev{
+        transform: rotate(180deg);
+        padding-left: 2px;
+      }
+      .btn-next{
+        padding-left: 2px;
+      }
+      .btn-close-modal{
+        position: unset;
+      }
+    }
+  }
 }
 
 .fade-in{
