@@ -89,7 +89,8 @@ body {
 
 
 .box-family {
-  width: 206px;
+  min-width: 206px;
+  max-width: 220px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto 20px auto;
@@ -336,6 +337,9 @@ body {
     font-size: 14px;
     font-weight: 500;
     margin-bottom: 16px;
+    img{
+      transition: 0.5s linear;
+    }
   }
 
   .toggle-content {
@@ -344,7 +348,7 @@ body {
     padding: 0 20px;
     opacity: 0;
     visibility: hidden;
-    transition: 0.5s ease-in;
+    transition: 0.5s ease-out;
     height: 0;
     overflow: hidden;
     margin: 0;
@@ -370,12 +374,14 @@ body {
   }
 
   &.active {
+    .btn-toggle img{
+      transform: rotate(180deg);
+    }
     .toggle-content {
       opacity: 1;
       visibility: visible;
-      height: 100%;
+      height: 32px;
       margin-bottom: 20px;
-
       &:nth-last-child(1) {
         margin-bottom: 24px;
       }
@@ -434,6 +440,8 @@ footer {
   }
 }
 
+
+//모달
 .wrap-modal {
   background: rgba(34, 34, 34, 0.50);
   position: fixed;
@@ -467,7 +475,7 @@ footer {
     }
   }
 
-  .modal-body {
+  .modal-container {
     height: 100%;
     position: relative;
   }
@@ -482,10 +490,12 @@ footer {
 
   .modal-send {
     height: 460px;
-    &.modal-landing{
+
+    &.modal-landing {
       height: 371px;
     }
-    .modal-body {
+
+    .modal-container {
       padding: 26px 0;
       position: relative;
     }
@@ -553,7 +563,7 @@ footer {
       &.active {
         svg {
           path {
-            fill: #A09665;
+            fill: #E5D480;
           }
         }
       }
@@ -606,6 +616,12 @@ footer {
           color: #FFF;
         }
 
+        .side-eat{
+          label{
+            width: 57px;
+          }
+        }
+
         .input-text {
           width: 100%;
           height: 48px;
@@ -614,7 +630,8 @@ footer {
           background: #FFF;
           padding: 0 16px;
           font-weight: 500;
-          &::placeholder{
+
+          &::placeholder {
             color: #BDBDBD;
             font-size: 14px;
             font-weight: 500;
@@ -622,5 +639,74 @@ footer {
         }
       }
     }
+  }
+
+  // 모달 send 끝
+
+  .modal-call {
+    border-radius: 20px;
+    overflow: hidden;
+
+    .modal-header {
+      padding: 0 20px;
+      height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #F0E8D3;
+
+      .title-call {
+        color: #8C712B;
+        font-size: 22px;
+        font-weight: 700;
+      }
+    }
+
+    .modal-body {
+      padding: 35px 20px 38px 20px;
+
+      .info {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 18px;
+
+        .type {
+          width: 74px;
+          color: #757575;
+          font-size: 16px;
+          font-weight: 500;
+        }
+        .name{
+          color: #424242;
+          text-align: center;
+          font-size: 16px;
+          font-weight: 500;
+        }
+        a{
+          margin-left: 20px;
+        }
+        &:nth-last-of-type(1) {
+          margin-bottom: 0;
+        }
+      }
+      .divider{
+        margin: 20px auto;
+        width: 100%
+      }
+    }
+  }
+}
+
+.fade-in{
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.8s ease-out;
+  transform: translateY(30px);
+  &.animate{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
   }
 }
