@@ -150,7 +150,7 @@
           <p class="name gray">신랑</p>
           <p class="account gray">
             국민<br>
-            <span class="account">200123-45-678900</span>
+            <span class="account-number">200123-45-678900</span>
           </p>
           <button class="btn-copy">복사하기</button>
         </div>
@@ -158,7 +158,7 @@
           <p class="name gray">제갈신랑</p>
           <p class="account gray">
             국민<br>
-            <span class="account">200123-45-678900</span>
+            <span class="account-number">200123-45-678900</span>
           </p>
           <button class="btn-copy">복사하기</button>
         </div>
@@ -173,7 +173,7 @@
           <p class="name gray">이하나</p>
           <p class="account gray">
             국민<br>
-            <span class="account">200123-45-678900</span>
+            <span class="account-number">200123-45-678900</span>
           </p>
           <button class="btn-copy">복사하기</button>
         </div>
@@ -181,7 +181,7 @@
           <p class="name gray">이승태</p>
           <p class="account gray">
             국민<br>
-            <span class="account">200123-45-678900</span>
+            <span class="account-number">200123-45-678900</span>
           </p>
           <button class="btn-copy">복사하기</button>
         </div>
@@ -442,6 +442,17 @@
         if (fadeElTop < window.innerHeight * showScroll) {
           fadeEl.classList.add('animate');
         }
+      })
+    })
+
+    //btn-copy를 누르면 계좌번호를 복사한다
+    const btnCopy = document.querySelectorAll('.btn-copy');
+    btnCopy.forEach((e) => {
+      e.addEventListener('click', function () {
+        const accountNumber = e.previousElementSibling.lastElementChild.innerText;
+        //accountNumber에서 -를 제거한다
+        const copyNumber = accountNumber.replace(/-/g, '');
+        navigator.clipboard.writeText(copyNumber);
       })
     })
   </script>
