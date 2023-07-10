@@ -322,21 +322,22 @@ body {
 .box-toggle {
   width: 335px;
   margin: 0 auto;
+  margin-top: 16px;
+  border-radius: 8px;
+  border: 1px solid #F0F0F0;
+  overflow: hidden;
 
   .btn-toggle {
     width: 100%;
-    height: 46px;
-    border-radius: 30px;
+    height: 52px;
     padding: 0 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid #424242;
-    background: #FFF;
-    color: #424242;
+    background: #F9F9F9;
+    color: #313131;
     font-size: 14px;
     font-weight: 500;
-    margin-bottom: 16px;
     img{
       transition: 0.5s linear;
     }
@@ -352,25 +353,49 @@ body {
     height: 0;
     overflow: hidden;
     margin: 0;
+    justify-content: space-between;
+    border-bottom: 1px solid #F0F0F0;
+    &:nth-last-of-type(1){
+      border-bottom: none;
+    }
+    .box-btn{
+      height: 52px;
+    }
   }
 
-  .gray {
-    color: #757575;
+  // .gray {
+  //   color: #757575;
+  //   font-size: 14px;
+  //   font-weight: 500;
+  // }
+
+  .name, .account {
+    margin-bottom: 8px;
     font-size: 14px;
     font-weight: 500;
+    color: #313131;
   }
-
-  .name {
-    margin-right: 32px;
-    width: 49px;
+  .account{
+    margin-bottom: 0;
   }
 
   .btn-copy {
-    color: #A09665;
-    text-align: right;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
     margin-left: auto;
+    width: 60px;
+    height: 24px;
+    border: 1px solid #E9E9E9;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    color: #313131;
+    margin-bottom: 4px;
+    img{
+      width: 14px;
+    }
   }
 
   &.active {
@@ -380,11 +405,7 @@ body {
     .toggle-content {
       opacity: 1;
       visibility: visible;
-      height: 32px;
-      margin-bottom: 20px;
-      &:nth-last-child(1) {
-        margin-bottom: 24px;
-      }
+      height: 78px;
     }
   }
 }
@@ -422,13 +443,13 @@ body {
 
 footer {
   width: 100%;
-  height: 97px;
+  height: 104px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #F5F5F5;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
 
   .link-share {
     color: #9E9E9E;
@@ -437,6 +458,15 @@ footer {
     font-weight: 400;
     display: flex;
     gap: 8px;
+    margin-bottom: 8px;
+    &:nth-last-child(1){
+      margin-bottom: 0;
+    }
+  }
+
+  .copyright{
+    color: #B0B6BE;
+    font-size: 12px;
   }
 }
 

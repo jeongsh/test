@@ -147,47 +147,75 @@
     <div class="wrap-toggle fade-in">
       <div class="box-toggle">
         <button class="btn-toggle">
-          신랑측 계좌번호
+          신랑측
           <img src="./assets/images/arrow-down.svg" alt="" class="icon-arrow-down">
         </button>
         <div class="toggle-content">
-          <p class="name gray">신랑</p>
-          <p class="account gray">
-            국민<br>
-            <span class="account-number">200123-45-678900</span>
-          </p>
-          <button class="btn-copy">복사하기</button>
+          <div class="box-text">
+            <p class="name gray">아버지 김승태</p>
+            <p class="account gray">
+              국민 <span class="account-number">200123-45-678900</span>
+            </p>
+          </div>
+          <div class="box-btn">
+            <button class="btn-copy">
+              <img src="./assets/images/icon-copy.png" alt="">
+              복사
+            </button>
+          </div>
         </div>
         <div class="toggle-content">
-          <p class="name gray">제갈신랑</p>
-          <p class="account gray">
-            국민<br>
-            <span class="account-number">200123-45-678900</span>
-          </p>
-          <button class="btn-copy">복사하기</button>
+          <div class="box-text">
+            <p class="name gray">제갈신랑</p>
+            <p class="account gray">국민 <span class="account-number">200123-45-678900</span>
+            </p>
+          </div>
+          <div class="box-btn">
+            <button class="btn-copy">
+              <img src="./assets/images/icon-copy.png" alt="">
+              복사
+            </button>
+            <a class="btn-kakao-pay">
+              <img src="./assets/images/icon-kakao-pay.svg" alt="">
+            </a>
+          </div>
         </div>
       </div>
 
       <div class="box-toggle fade-in">
         <button class="btn-toggle">
-          신부측 계좌번호
+          신부측
           <img src="./assets/images/arrow-down.svg" alt="" class="icon-arrow-down">
         </button>
         <div class="toggle-content">
-          <p class="name gray">이하나</p>
-          <p class="account gray">
-            국민<br>
-            <span class="account-number">200123-45-678900</span>
-          </p>
-          <button class="btn-copy">복사하기</button>
+          <div class="box-text">
+            <p class="name gray">아버지 김승태</p>
+            <p class="account gray">
+              국민 <span class="account-number">200123-45-678900</span>
+            </p>
+          </div>
+          <div class="box-btn">
+            <button class="btn-copy">
+              <img src="./assets/images/icon-copy.png" alt="">
+              복사
+            </button>
+          </div>
         </div>
         <div class="toggle-content">
-          <p class="name gray">이승태</p>
-          <p class="account gray">
-            국민<br>
-            <span class="account-number">200123-45-678900</span>
-          </p>
-          <button class="btn-copy">복사하기</button>
+          <div class="box-text">
+            <p class="name gray">이신부</p>
+            <p class="account gray">국민 <span class="account-number">200123-45-678900</span>
+            </p>
+          </div>
+          <div class="box-btn">
+            <button class="btn-copy">
+              <img src="./assets/images/icon-copy.png" alt="">
+              복사
+            </button>
+            <a class="btn-kakao-pay">
+              <img src="./assets/images/icon-kakao-pay.svg" alt="">
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -201,14 +229,17 @@
     </div>
 
     <footer>
-      <a href="" class="link-share">
-        <img src="./assets/images/icon-kakao.svg" alt="카카오톡 아이콘">
-        카카오톡으로 공유하기
-      </a>
-      <a href="" class="link-share">
-        <img src="./assets/images/icon-link.svg" alt="공유 아이콘">
-        링크주소 복사하기
-      </a>
+      <div>
+        <a href="" class="link-share">
+          <img src="./assets/images/icon-kakao.svg" alt="카카오톡 아이콘">
+          카카오톡으로 공유하기
+        </a>
+        <a href="" class="link-share">
+          <img src="./assets/images/icon-link.svg" alt="공유 아이콘">
+          링크주소 복사하기
+        </a>
+      </div>
+      <p class="copyright">Copyright ⓒ 2023. 그룸라이드. All rights reserved.</p>
     </footer>
   </div>
 
@@ -518,7 +549,7 @@
       swiperSlide.classList.add('swiper-slide');
       swiperSlide.innerHTML = e.innerHTML;
       modalSwiper.querySelector('.swiper-wrapper').appendChild(swiperSlide);
-      
+
       //galleryImg를 클릭하면 모달을 보여준다
       e.addEventListener('click', function () {
         swiper.slideTo(i, 0);
