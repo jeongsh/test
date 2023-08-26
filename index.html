@@ -1,563 +1,96 @@
 <!DOCTYPE html>
-<html lang="ko">
-
+<html lang="kr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <meta
+    name="description"
+    content="집단지성과 인공지능을 연결한 지속가능한 다음 세대의 위키를 만든다"
+  />
+  <meta name="keywords" content="WiKiLabs, 위키랩스, 위키, 랩스, wiki, labs, 인공지능" />
+  <title>WiKi Labs</title>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
-  <title>Document</title>
+  <!-- <link rel="stylesheet" href="./assets/css/javascript.fullPage.css"> -->
+  <link rel="stylesheet" href="./assets/css/jquery.fullpage.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <!-- <script src="./assets/js/javascript.fullPage.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
+  <script src="./assets/js/jquery.fullpage.js"></script>
 </head>
-
 <body>
-  <div class="wrap-card">
-    <img src="./assets/images/title.png" alt="We get married" class="title">
-    <p class="eng-name text-gold-eng">
-      KIM SE HYEOK / YOON SEO LIM
-    </p>
-    <img src="./assets/images/main-visual.png" alt="main-visual" class="main-visual">
-    <div class="line-vetical"></div>
-
-    <p class="date text-gold-eng">
-      2025. 08. 26 SAT PM 1:00<br>Tov Hesed
-    </p>
-
-    <p class="text-thanks fade-in">
-      오늘이 있기까지 보내주신<br>
-      따뜻한 사랑과 깊은 관심에 진심으로 감사하오며,<br>
-      저희 두 사람은 여러분의 축복을 받으며<br>
-      진실한 기약을 맺고자 합니다. <br>
-      부디 참석하시여 기쁨의 자리를 축복으로<br>
-      더욱 빛내 주시길 바랍니다.
-    </p>
-    <div class="box-family fade-in">
-      <div class="box-parent">
-        <p class="name">김태영</p>
-        <p class="name">•</p>
-        <p class="name">서미숙<span class="gray">의 아들</span></p>
-
-      </div>
-      <p class="name">
-        세혁
-      </p>
-    </div>
-    <div class="box-family fade-in">
-      <div class="box-parent">
-        <p class="name">윤승태</p>
-        <p class="name">•</p>
-        <p class="name">정선화<span class="gray">의 딸</span></p>
-
-      </div>
-      <p class="name">
-        서림
-      </p>
-    </div>
-    <button class="btn-gold btn-call btn-modal  fade-in" data-target="call">연락하기</button>
-
-    <p class="text-wedding fade-in">By Wedding Day</p>
-    <h2 class="text-dday fade-in">D-15</h2>
-    <p class="text-kr-day fade-in">2028. 8. 26 토요일 오후 1시</p>
-
-    <div class="fade-in">
-      <div class="box-gallery">
-        <div class="line-gold"></div>
-        <div class="gallery">
-          <div class="gallery-img"><img src="./assets/images/example2.jpg" alt="갤러리 이미지"></div>
-          <div class="gallery-img"><img src="./assets/images/example3.jpg" alt="갤러리 이미지"></div>
-          <div class="gallery-img"><img src="./assets/images/gallery-3.jpg" alt="갤러리 이미지"></div>
-          <div class="gallery-img"><img src="./assets/images/gallery-4.jpg" alt="갤러리 이미지"></div>
-          <div class="gallery-img"><img src="./assets/images/example.png" alt="갤러리 이미지"></div>
-          <div class="gallery-img"><img src="./assets/images/gallery-4.jpg" alt="갤러리 이미지"></div>
-          <div class="gallery-img"><img src="./assets/images/gallery-3.jpg" alt="갤러리 이미지"></div>
-          <div class="gallery-img"><img src="./assets/images/gallery-4.jpg" alt="갤러리 이미지"></div>
+  <header>
+    <a href="/" class="logo">
+      <img src="./assets/images/logo.svg" alt="">
+    </a>
+    <nav id="menu">
+      <a href="#firstPage" class="link" data-menuanchor="firstPage">Vision</a>
+      <a href="#secondPage" class="link" data-menuanchor="secondPage">wikiChat</a>
+      <a href="#3rdPage" class="link" data-menuanchor="3rdPage">AIwiki</a>
+    </nav>
+  </header>
+  <div id="fullpage">
+    <section class="section sec-vision">
+      <div class="bg">
+        <div class="box-title">
+          <img src="./assets/images/logo.svg" alt="로고" class="logo">
+          <h2 class="title">집단지성과<br class="mo">인공지능을 연결한<br>지속가능한 다음 세대의<br class="mo">위키를 만든다</h2>
+          <a href="/" class="btn-purple">App Store</a>
         </div>
-        <div class="line-gold reverse"></div>
-      </div>
-    </div>
-    <button class="btn-more btn-white fade-in">더보기</button>
-
-    <img src="./assets/images/icon-pin.svg" alt="" class="icon-pin fade-in">
-    <p class="text-gold-kr fade-in">오시는 길</p>
-    <p class="text-address-thick fade-in">아펠가모 광화문 B2 로스타뇨홀</p>
-    <p class="text-address-thin fade-in">서울 종로구 종로1길 50</p>
-
-    <div class="box-map fade-in">
-      <div class="map"></div>
-      <div class="map-footer">
-        <div class="box-icon">
-          <img src="./assets/images/icon-kakao-map.png" alt="카카오 지도" class="icon-map">
-          <p class="text-icon">카카오 지도</p>
-        </div>
-        <div class="box-icon">
-          <img src="./assets/images/icon-naver-map.png" alt="네이버 지도" class="icon-map">
-          <p class="text-icon">네이버 지도</p>
-        </div>
-        <div class="box-icon">
-          <img src="./assets/images/icon-tmap.png" alt="티맵" class="icon-map">
-          <p class="text-icon">티맵</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="box-transport">
-      <dl class="fade-in">
-        <dt class="text-transport">
-          지하철
-        </dt>
-        <dd class="text-way">[분당선] <strong>서울숲역</strong> 5번 출구 도보 2분,<br>
-          [2호선] <strong>뚝섬역</strong> 8번 출구 도보 5분
-        </dd>
-      </dl>
-      <dl class="fade-in">
-        <dt class="text-transport">
-          버스
-        </dt>
-        <dd class="text-way">뚝섬 서울숲 정류장<br>
-          121, 141, 145, 148, 463
-        </dd>
-      </dl>
-      <dl class="fade-in">
-        <dt class="text-transport">
-          자가용
-        </dt>
-        <dd class="text-way">건물 내 B3-B7 2시간 무료주차<br>
-          안내데스크에서 주차 등록
-        </dd>
-      </dl>
-    </div>
-
-    <div class="box-send fade-in">
-      <img src="./assets/images/icon-send.svg" alt="보내기 아이콘" class="icon-send fade-in">
-      <p class="text-gold-kr fade-in">참석 의사 전달</p>
-      <p class="text-send fade-in">
-        축하의 마음으로 참석해주시는<br>
-        모든 분들을 귀하게 모실 수 있도록<br>
-        참석 의사를 전달 부탁드립니다.
-      </p>
-      <button class="btn-gold btn-send btn-modal fade-in" data-target="send">참석 의사 전달하기</button>
-    </div>
-
-    <img src="./assets/images/icon-heart.svg" alt="하트 아이콘" class="icon-heart fade-in">
-    <p class="text-gold-kr fade-in">마음 전하실 곳</p>
-
-    <div class="wrap-toggle fade-in">
-      <div class="box-toggle">
-        <button class="btn-toggle">
-          신랑측
-          <img src="./assets/images/arrow-down.svg" alt="" class="icon-arrow-down">
-        </button>
-        <div class="toggle-content">
-          <div class="box-text">
-            <p class="name gray">아버지 김승태</p>
-            <p class="account gray">
-              국민 <span class="account-number">200123-45-678900</span>
-            </p>
-          </div>
-          <div class="box-btn">
-            <button class="btn-copy">
-              <img src="./assets/images/icon-copy.png" alt="">
-              복사
-            </button>
-          </div>
-        </div>
-        <div class="toggle-content">
-          <div class="box-text">
-            <p class="name gray">제갈신랑</p>
-            <p class="account gray">국민 <span class="account-number">200123-45-678900</span>
-            </p>
-          </div>
-          <div class="box-btn">
-            <button class="btn-copy">
-              <img src="./assets/images/icon-copy.png" alt="">
-              복사
-            </button>
-            <a class="btn-kakao-pay">
-              <img src="./assets/images/icon-kakao-pay.svg" alt="">
-            </a>
+        <div class="box-scroll">
+          <p>Scroll down</p>
+          <div class="scroll">
+            <img src="./assets/images/down.svg" alt="">
           </div>
         </div>
       </div>
-
-      <div class="box-toggle fade-in">
-        <button class="btn-toggle">
-          신부측
-          <img src="./assets/images/arrow-down.svg" alt="" class="icon-arrow-down">
-        </button>
-        <div class="toggle-content">
-          <div class="box-text">
-            <p class="name gray">아버지 김승태</p>
-            <p class="account gray">
-              국민 <span class="account-number">200123-45-678900</span>
-            </p>
-          </div>
-          <div class="box-btn">
-            <button class="btn-copy">
-              <img src="./assets/images/icon-copy.png" alt="">
-              복사
-            </button>
-          </div>
-        </div>
-        <div class="toggle-content">
-          <div class="box-text">
-            <p class="name gray">이신부</p>
-            <p class="account gray">국민 <span class="account-number">200123-45-678900</span>
-            </p>
-          </div>
-          <div class="box-btn">
-            <button class="btn-copy">
-              <img src="./assets/images/icon-copy.png" alt="">
-              복사
-            </button>
-            <a class="btn-kakao-pay">
-              <img src="./assets/images/icon-kakao-pay.svg" alt="">
-            </a>
-          </div>
-        </div>
+    </section>
+    <section class="section sec-chat sec-sub">
+      <div class="bg">
+        <div class="line"></div>
+        <h4 class="title">wikiChat</h4>
+        <p class="sub-title">대화형 위키서비스</p>
+        <p class="desc">부정확한 수많은 정보 중<br class="mo"> 사용자가 원하는<br>
+          간결하고 정확한<br class="mo"> 최적의 검색 결과 제공</p>
+        <a href="/" class="btn-more">Learn More</a>
       </div>
-    </div>
-
-    <div class="divider"></div>
-
-    <div class="box-flower fade-in">
-      <p class="info-flower">화환 안내</p>
-      <p class="text-flower">예식장 사정으로 화환은 마음만 받겠습니다.</p>
-      <button class="btn-white btn-flower">예식장으로 화환 보내기</button>
-    </div>
-
-    <footer>
-      <div>
-        <a href="" class="link-share">
-          <img src="./assets/images/icon-kakao.svg" alt="카카오톡 아이콘">
-          카카오톡으로 공유하기
-        </a>
-        <a href="" class="link-share">
-          <img src="./assets/images/icon-link.svg" alt="공유 아이콘">
-          링크주소 복사하기
-        </a>
+    </section>
+    <section class="section sec-ai sec-sub">
+      <div class="bg">
+        <div class="line"></div>
+        <h4 class="title">AIwiki</h4>
+        <p class="sub-title">생성 AI 기반 집단지성 플랫폼</p>
+        <p class="desc">AI 스스로<br class="mo"> 정보를 검색하고 지식화,<br>모두가 참여하는<br class="mo"> 완전한 의미의 집단지성 플랫폼</p>
+        <a href="/" class="btn-more">Learn More</a>
       </div>
-      <p class="copyright">Copyright ⓒ 2023. 그룸라이드. All rights reserved.</p>
+    </section>
+    <footer class="section fp-auto-height">
+      <div class="box">
+       <div>
+        <img src="./assets/images/logo.svg" alt="로고" class="logo">
+        <p class="name">㈜위키랩스</p>
+        <p class="info">
+          대전광역시중구대종로708, 2층월드비즈타운238호(중촌동)<br>
+          대표: 이지산<br>
+          사업자등록번호: 646-86-02695<br>
+          문의: contact@wikilabs.co.kr
+        </p>
+       </div>
+      </div>
     </footer>
   </div>
-
-  <div class="wrap-modal">
-    <!-- 랜딩모달 -->
-    <div class="modal modal-send modal-landing" data-name="send-landing">
-      <div class="modal-container">
-        <p class="title-send">참석 의사 전달</p>
-        <p class="text-send">
-          축하의 마음으로 참석해주시는<br>
-          모든 분들을 귀하게 모실 수 있도록<br>
-          참석 의사를 전달 부탁드립니다.
-        </p>
-        <div class="divider"></div>
-        <p class="name">신랑 최도현 & 신부 이하나</p>
-        <p class="location">2023년 10월 28일 토요일 오후 1시 30분</p>
-        <p class="location">아펠가모 광화문 B2 로스타뇨홀</p>
-        <button class="btn-gold btn-modal" data-target="send">참석 의사 전달하기</button>
-
-        <button class="btn-close-modal">
-          <img src="./assets/images/icon-close.svg" alt="닫기 버튼">
-        </button>
-      </div>
-      <button class="btn-close-day">
-        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
-          <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M14.5 22.75C19.3325 22.75 23.25 18.8325 23.25 14C23.25 9.16751 19.3325 5.25 14.5 5.25C9.66751 5.25 5.75 9.16751 5.75 14C5.75 18.8325 9.66751 22.75 14.5 22.75ZM14.5 24.5C20.299 24.5 25 19.799 25 14C25 8.20101 20.299 3.5 14.5 3.5C8.70101 3.5 4 8.20101 4 14C4 19.799 8.70101 24.5 14.5 24.5Z"
-            fill="white" />
-          <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M19.7268 9.82783C20.0981 10.1372 20.1482 10.6889 19.8389 11.0602L14.0055 18.0602C13.8406 18.258 13.597 18.3732 13.3394 18.375C13.0819 18.3768 12.8366 18.265 12.669 18.0695L9.16898 13.9861C8.85448 13.6192 8.89698 13.0668 9.26389 12.7523C9.6308 12.4378 10.1832 12.4803 10.4977 12.8472L13.3239 16.1445L18.4945 9.93986C18.8038 9.56862 19.3556 9.51846 19.7268 9.82783Z"
-            fill="white" />
-        </svg>
-        오늘 하루 보지 않기
-      </button>
-    </div>
-    <!-- 랜딩모달 끝-->
-
-    <!-- 참석 의사 모달 -->
-    <div class="modal modal-send" data-name="send">
-      <div class="modal-container">
-        <p class="title-send">참석 의사 전달</p>
-        <ul class="list-input">
-          <li class="list-item">
-            <p class="type">구분</p>
-            <div class="wrap-input side">
-              <input type="radio" name="side" id="groom" value="yes" checked>
-              <label for="groom">신랑</label>
-              <input type="radio" name="side" id="bride" value="no">
-              <label for="bride">신부</label>
-            </div>
-          </li>
-          <li class="list-item">
-            <p class="type">성함</p>
-            <div class="wrap-input side">
-              <input type="text" class="input-text">
-            </div>
-          </li>
-          <li class="list-item">
-            <p class="type">참석인원</p>
-            <div class="wrap-input side">
-              <input type="text" class="input-text" placeholder="본인 포함 총 참석인원">
-            </div>
-          </li>
-          <li class="list-item">
-            <p class="type">연락처</p>
-            <div class="wrap-input side">
-              <input type="text" class="input-text" placeholder="- 없이 숫자만">
-            </div>
-          </li>
-          <li class="list-item">
-            <p class="type">식사여부</p>
-            <div class="wrap-input side side-eat">
-              <input type="radio" name="eat" id="eat-yes" value="yes" checked>
-              <label for="eat-yes">예정</label>
-              <input type="radio" name="eat" id="eat-no" value="no">
-              <label for="eat-no">안함</label>
-              <input type="radio" name="eat" id="eat-undecided" value="no">
-              <label for="eat-undecided">미정</label>
-            </div>
-          </li>
-        </ul>
-        <button class="btn-gold">참석 의사 전달하기</button>
-        <button class="btn-close-modal">
-          <img src="./assets/images/icon-close.svg" alt="닫기 버튼">
-        </button>
-      </div>
-    </div>
-    <!-- 참석 의사 모달 -->
-
-    <!-- 연락하기 모달 -->
-    <div class="modal modal-call" data-name="call">
-      <div class="modal-container">
-        <div class="modal-header">
-          <p class="title-call">연락하기</p>
-          <button class="btn-close-modal">
-            <img src="./assets/images/icon-close-gold.svg" alt="닫기 버튼">
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="info">
-            <p class="type">신랑</p>
-            <p class="name">최도현</p>
-            <div class="box-icon">
-              <a href="tel:01012341234"><img src="./assets/images/icon-phone.svg" alt="전화기 아이콘"></a>
-              <a href="mailto:test123@example.com?"><img src="./assets/images/icon-mail.svg" alt="이메일 아이콘"></a>
-            </div>
-          </div>
-          <div class="info">
-            <p class="type">신랑 아버지</p>
-            <p class="name">최재만</p>
-            <div class="box-icon">
-              <a href="tel:01012341234"><img src="./assets/images/icon-phone.svg" alt="전화기 아이콘"></a>
-              <a href="mailto:test123@example.com?"><img src="./assets/images/icon-mail.svg" alt="이메일 아이콘"></a>
-            </div>
-          </div>
-          <div class="info">
-            <p class="type">신랑 어머니</p>
-            <p class="name">제갈미숙</p>
-            <div class="box-icon">
-              <a href="tel:01012341234"><img src="./assets/images/icon-phone.svg" alt="전화기 아이콘"></a>
-              <a href="mailto:test123@example.com?"><img src="./assets/images/icon-mail.svg" alt="이메일 아이콘"></a>
-            </div>
-          </div>
-          <div class="divider"></div>
-          <div class="info">
-            <p class="type">신부</p>
-            <p class="name">이하나</p>
-            <div class="box-icon">
-              <a href="tel:01012341234"><img src="./assets/images/icon-phone.svg" alt="전화기 아이콘"></a>
-              <a href="mailto:test123@example.com?"><img src="./assets/images/icon-mail.svg" alt="이메일 아이콘"></a>
-            </div>
-          </div>
-          <div class="info">
-            <p class="type">신부 아버지</p>
-            <p class="name">이승태</p>
-            <div class="box-icon">
-              <a href="tel:01012341234"><img src="./assets/images/icon-phone.svg" alt="전화기 아이콘"></a>
-              <a href="mailto:test123@example.com?"><img src="./assets/images/icon-mail.svg" alt="이메일 아이콘"></a>
-            </div>
-          </div>
-          <div class="info">
-            <p class="type">신부 어머니</p>
-            <p class="name">정선화</p>
-            <div class="box-icon">
-              <a href="tel:01012341234"><img src="./assets/images/icon-phone.svg" alt="전화기 아이콘"></a>
-              <a href="mailto:test123@example.com?"><img src="./assets/images/icon-mail.svg" alt="이메일 아이콘"></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- 연락하기 모달 끝 -->
-    <!-- 이미지 뷰어 -->
-    <div class="modal modal-swiper">
-      <div class="swiper swiper-img">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-        </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-
-        <!-- If we need navigation buttons -->
-        <div class="box-btn">
-          <button class="btn-prev">
-            <span class="material-symbols-rounded">
-              arrow_forward_ios
-            </span>
-          </button>
-          <button class="btn-next">
-            <span class="material-symbols-rounded">
-              arrow_forward_ios
-            </span>
-          </button>
-          <button class="btn-close-modal">
-            <span class="material-symbols-rounded">
-              close
-            </span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <script>
-    const boxGallery = document.querySelector('.box-gallery');
-    const boxGalleryHeight = boxGallery.offsetHeight;
-    const btnMore = document.querySelector('.btn-more');
-    // 박스 갤러리의 높이를 반으로 줄인다
-    boxGallery.style.maxHeight = boxGalleryHeight / 2 + 'px';
-    btnMore.addEventListener('click', function () {
-      boxGallery.style.maxHeight = boxGalleryHeight + 'px';
-      btnMore.style.display = 'none';
-    })
-
-    const btnToggle = document.querySelectorAll('.btn-toggle');
-    const toggleBox = document.querySelectorAll('.box-toggle');
-
-    btnToggle.forEach((e, i) => {
-      e.addEventListener('click', function () {
-        toggleBox[i].classList.toggle('active');
-      })
-    })
-
-
-    //모달
-    const wrapModal = document.querySelector('.wrap-modal');
-    const modal = document.querySelectorAll('.modal');
-    const btnModal = document.querySelectorAll('.btn-modal');
-    const btnCloseModal = document.querySelectorAll('.btn-close-modal');
-    const btnCloseDay = document.querySelector('.btn-close-day');
-    let isClicked = localStorage.getItem('closeDay') ? true : false;
-    //만약 closeDay가 false면 wrapModal과 send-landing을 보여준다
-    if (!localStorage.getItem('closeDay')) {
-      wrapModal.classList.add('active');
-      const modalLanding = document.querySelector('.modal-landing');
-      modalLanding.classList.add('active');
-    }
-
-    btnModal.forEach((e) => {
-      e.addEventListener('click', function () {
-        for (let i = 0; i < modal.length; i++) {
-          modal[i].classList.remove('active');
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+        anchors: ['firstPage', 'secondPage', '3rdPage', '4rdPage'],
+        menu: '#menu',
+        css3:true,
+        afterLoad: function(anchorLink, index) {
+          setTimeout(function(){
+            $('.section').eq(index - 1).addClass('show');
+          }, 1);
         }
-        wrapModal.classList.add('active');
-        modal.forEach((modal) => {
-          if (e.dataset.target === modal.dataset.name) {
-            modal.classList.add('active');
-          }
-        })
-      })
-    })
-
-    btnCloseModal.forEach((e) => {
-      e.addEventListener('click', function () {
-        wrapModal.classList.remove('active');
-        modal.forEach((modal) => {
-          modal.classList.remove('active');
-        })
-      })
-    })
-
-    //btn-close-day 누르면 24시간 동안 안보이게 하기
-    btnCloseDay.addEventListener('click', function () {
-      btnCloseDay.classList.toggle('active');
-      localStorage.setItem('closeDay', !isClicked);
-      isClicked = !isClicked;
-    })
-
-    //모달 바깥을 누르면 모달 닫기
-    wrapModal.addEventListener('click', function (e) {
-      if (e.target === wrapModal) {
-        wrapModal.classList.remove('active');
-        modal.forEach((modal) => {
-          modal.classList.remove('active');
-        })
-      }
-    })
-
-    //fade-in클래스를 갖고 있는 요소들을 찾아서 화면 상단 30%에 위치하면 animate 추가한다
-    const fadeEls = document.querySelectorAll('.fade-in');
-    const showScroll = 0.8;
-    fadeEls.forEach((fadeEl) => {
-      window.addEventListener('scroll', () => {
-        const fadeElTop = fadeEl.getBoundingClientRect().top;
-        if (fadeElTop < window.innerHeight * showScroll) {
-          fadeEl.classList.add('animate');
-        }
-      })
-    })
-    //fadeEls의 마지막 요소를 찾아서 화면 상단 20%거나 푸터가 화면에 보이면 animate 추가한다
-    const lastFadeEl = fadeEls[fadeEls.length - 1];
-    window.addEventListener('scroll', () => {
-      const lastFadeElTop = lastFadeEl.getBoundingClientRect().top;
-      const footerTop = document.querySelector('footer').getBoundingClientRect().top;
-      if (lastFadeElTop < window.innerHeight * 0.2 || footerTop < window.innerHeight) {
-        lastFadeEl.classList.add('animate');
-      }
-    })
-
-    //btn-copy를 누르면 계좌번호를 복사한다
-    const btnCopy = document.querySelectorAll('.btn-copy');
-    btnCopy.forEach((e) => {
-      e.addEventListener('click', function () {
-        const accountNumber = e.previousElementSibling.lastElementChild.innerText;
-        //accountNumber에서 -를 제거한다
-        const copyNumber = accountNumber.replace(/-/g, '');
-        navigator.clipboard.writeText(copyNumber);
-      })
-    })
-
-    const galleryImg = document.querySelectorAll('.gallery-img');
-    const modalSwiper = document.querySelector('.modal-swiper');
-
-    const swiper = new Swiper('.swiper-img', {
-      slidesPerView: 1,
-      direction: 'horizontal',
-      navigation: {
-        nextEl: ".btn-next",
-        prevEl: ".btn-prev",
-      }
-    })
-
-    galleryImg.forEach((e, i) => {
-      //galleryImg속 img태그를 복사하여 swiper-wrpper에 <div class="swiper-slide">이미지태그</div> 형식으로 추가한다
-      const swiperSlide = document.createElement('div');
-      swiperSlide.classList.add('swiper-slide');
-      swiperSlide.innerHTML = e.innerHTML;
-      modalSwiper.querySelector('.swiper-wrapper').appendChild(swiperSlide);
-
-      //galleryImg를 클릭하면 모달을 보여준다
-      e.addEventListener('click', function () {
-        swiper.slideTo(i, 0);
-        wrapModal.classList.add('active');
-        modalSwiper.classList.add('active');
-      })
-    })
+      });
+    });
   </script>
 </body>
-
 </html>
