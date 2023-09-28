@@ -44,7 +44,9 @@
   </div>
   <div class="main">
     <div class="main-header">
-      <img src="./assets/images/logo.svg" alt="" class="logo">
+      <button class="btn-logo">
+        <img src="./assets/images/logo.svg" alt="" class="logo">
+      </button>
     </div>
     <p class="info fade-in">
       <span class="bold">일시</span><br>
@@ -101,6 +103,7 @@
   <script>
     const intro = document.querySelector('.intro');
     const main = document.querySelector('.main');
+    const btnLogo = document.querySelector('.btn-logo');
     intro.addEventListener('click', () => {
       intro.classList.add('hide');
       main.style.display = 'block';
@@ -116,6 +119,16 @@
           }
         });
       }, 600);
+    });
+
+    btnLogo.addEventListener('click', () => {
+      main.classList.remove('show');
+      main.style.display = 'none';
+        intro.classList.remove('hide');
+      // setTimeout(() => {
+      //   main.style.display = 'none';
+      //   intro.classList.remove('hide');
+      // }, 600);
     });
 
     const btnUp = document.querySelector('.btn-up');
