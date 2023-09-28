@@ -229,7 +229,12 @@
   .main .ex-story{
     margin-bottom: 300px;
   }
+}
 
+@media screen and (max-height : 700px){
+  .intro .box-desc{
+    padding-top: 0;
+  }
 }
 
 @keyframes arrow{
