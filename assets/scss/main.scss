@@ -222,6 +222,16 @@
   }
 }
 
+@media screen and (min-width: 390px) {
+  .main .box-arrow{
+    margin: 0 auto 220px auto;
+  }
+  .main .ex-story{
+    margin-bottom: 300px;
+  }
+
+}
+
 @keyframes arrow{
   0%{
     opacity: 0;
