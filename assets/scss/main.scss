@@ -594,8 +594,9 @@
       grid-template-columns: repeat(5, 1fr);
       gap: 1.5rem 0;
       &.box-hidden{
-        overflow: hidden;
-        transition: 0.5s;
+        display: none;
+        // overflow: hidden;
+        // transition: 0.5s;
       }
     }
     .partner{
@@ -825,6 +826,7 @@
       border-radius: 5rem;
       border: 2px solid var(--Main-Color, #B70000);
       transition: 0.3s;
+      margin-left: auto;
       &:hover{
         background: #B70000;
         color: #fff;

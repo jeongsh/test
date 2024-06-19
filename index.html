@@ -248,9 +248,9 @@
 
           <div class="box-tab">
             <div class="tab active" data-tab="3">
-              <h4 class="tab-title">국내 유통채널의 전략적 다각화</h3>
+              <h4 class="tab-title">온 · 오프라인 면세점 입점</h3>
               <p class="tab-desc">
-                오픈마켓, 종합몰, 폐쇄몰, 공동구매 등 브랜드와 제품에 적합한 채널에 전략적으로 접근해 성과를 이끌어냅니다.
+                면세점은 글로벌 여행객 및 해외 바이어와 직접 소통하는 창구로서 글로벌 시장의 접근성을 향상시킵니다.
               </p>
               <div class="box-hover">
                 <div class="hover">
@@ -487,13 +487,6 @@
             <textarea name="" id="" class="textarea" placeholder="문의 내용을 작성해주세요."></textarea>
 
             <div class="box-submit">
-              <!-- 개인정보 보호정책 동의 -->
-              <label class="label-agree">
-                <!-- <input type="checkbox">
-                <span class="checkmark"></span> -->
-                <span>개인정보 보호정책</span>에 동의합니다.
-              </label>
-
               <button class="btn-submit">
                 submit
               </button>
@@ -523,7 +516,7 @@
         </div>
         <div class="box-logo">
           <img src="./assets/images/common/logo.svg" alt="" class="logo">
-          <a href="" class="text">개인정보처리 방침</a>
+          <a href="/privacy.html" class="text" target="_blank">개인정보처리 방침</a>
           <p class="copyright text">
             ⓒ 2024. C DRIVE Corp. All rights reserved
           </p>
@@ -560,7 +553,7 @@
       let hiddenHeight = boxHidden.clientHeight;
       boxHidden.style.height = '0';
       btnMore.addEventListener(('click'), () => {
-        boxHidden.style.height = `${hiddenHeight}px`;
+        boxHidden.style.display = 'grid';
         btnMore.style.display = 'none';
       });
     })();
