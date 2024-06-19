@@ -61,19 +61,19 @@
     .star{
       position: absolute;
       &:nth-child(2){
-        left: 72px;
+        left: 0;
         top: 61px;
       }
       &:nth-child(3){
-        right: 72px;
+        right: 0;
         top: 61px;
       }
       &:nth-child(4){
-        left: 72px;
+        left: 0;
         bottom: 54px;
       }
       &:nth-child(5){
-        right: 72px;
+        right: 0;
         bottom: 54px;
       }
     }
@@ -348,7 +348,7 @@
     font-weight: 400;
     line-height: 140%; /* 196px */
     text-transform: uppercase;
-    margin-bottom: 1.125rem;
+    margin-bottom: 3rem;
     transition: 0.5s 0.3s ease;
     
   }
@@ -569,18 +569,18 @@
 
 .sec-5{
   .container{
-    padding-top: 5.625rem;
+    padding-top: 7rem;
     min-height: 100vh;
   }
   .title{
     color: var(--Main-Color, #B70000);
     font-family: Impact;
-    font-size: 5rem;
+    font-size: 6rem;
     font-style: normal;
     font-weight: 400;
     line-height: 140%; /* 134.4px */
     text-transform: uppercase;
-    margin-bottom: 0.5rem;
+    margin-bottom: 3rem;
     opacity: 0;
     transition: 0.7s;
   }
@@ -627,15 +627,16 @@
     font-weight: 400;
     line-height: 140%; /* 28px */
     text-transform: uppercase;
-    width: 20rem;
+    width: 15rem;
     height: 3rem;
     border-radius: 20rem;
     border: 2px solid #8D8D8D;
-    margin: 5rem auto 0 auto;
+    margin: 2.5rem auto 0 auto;
     transition: 0.3s;
     &:hover{
-      background: #8d8d8d;
+      background: #B70000;
       color: #fff;
+      border-color: #B70000;
     }
   }
   &.loaded{
@@ -686,10 +687,9 @@
   .box-text{
     width: 58.68%;
     margin-left: auto;
-    padding: 8rem 0 0 8.3vw;
+    padding: 10rem 0 0 8.3vw;
     background: #fff;
     flex: 1;
-    border-bottom: 1px solid #B70000;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -739,7 +739,8 @@
         input{
           display: none;
           &:checked + label{
-            background: #221714;
+            background: #B70000;
+            border-color: #B70000;
             color: #fff;
           }
         }
@@ -759,7 +760,8 @@
           align-items: center;
           justify-content: center;
           &:hover{
-            background: #221714;
+            background: #B70000;
+            border-color: #B70000;
             color: #fff;
           }
         }
@@ -822,19 +824,24 @@
       padding: 0.8rem 5rem;
       border-radius: 5rem;
       border: 2px solid var(--Main-Color, #B70000);
+      transition: 0.3s;
+      &:hover{
+        background: #B70000;
+        color: #fff;
+      }
     }
   }
 }
 
 .footer{
   padding: 6.875rem 0 7.25rem;
+  border-top: 1px solid #B70000;
   .info{
     color: #000;
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    text-transform: uppercase;
     margin-bottom: 1rem;
     &:last-child{
       margin-bottom: 0;
